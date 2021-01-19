@@ -1,0 +1,183 @@
+:root{
+    /* primary */
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Bluet: hsl(212, 86%, 64%);
+
+    /* neutral */
+    --Blue: hsl(234, 12%, 34%);
+    --GrayBlue: hsl(229, 6%, 66%);
+    --VeryGray: hsl(0, 0%, 98%);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+}   
+
+body{
+    background: var(--VeryGray);
+    height: 100vh;
+}
+
+.container{
+    /* background: pink; */
+    width: 1440px;
+    margin: 30px auto;
+}
+
+/* Header  */
+header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+header h1{
+    font-size: 20px;
+    font-weight: 200;
+}
+
+header h3{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+header p{
+    width: 34%;
+    margin: auto;
+    font-weight: 200;
+}
+
+
+/* Body  */
+section{  
+    display: flex;   
+    justify-content: center;
+}
+
+section .first{
+    /* background: seagreen; */
+    width: 23%;
+    height: calc(60vh + 10px + .6rem + .6rem);
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+}
+     
+section .joint{
+    /* background: sandybrown; */
+    width: 23%;
+    height: calc(60vh + 10px);
+    /* margin: auto; */
+}
+   
+section .third{
+    /* background: salmon; */
+    width: 23%;
+    height: calc(60vh + 10px + .6rem + .6rem);  
+    margin-left: 30px;  
+    display: flex;
+    align-items: center;
+}
+
+section .first .supervisor{
+    background: #fff;
+    height: 30vh;
+    padding: 1.1rem .9rem;
+    border-top: .6rem solid var(--Cyan);
+    border-radius: .4rem .4rem .4rem .4rem;
+    position: relative;
+    box-shadow: 10px 10px 10px rgba(0,0,0, 0.4);
+}
+
+section .joint .team-builder{
+    background: #fff;
+    height: 30vh;
+    margin-bottom: 30px;
+    height: 30vh;
+    padding: 1.1rem .9rem;
+    border-top: .6rem solid var(--Red);
+    border-radius: .4rem .4rem .4rem .4rem;
+    position: relative;
+    box-shadow: 10px 10px 10px rgba(0,0,0, 0.4);
+    border-bottom: 10px;
+}
+
+section .joint .karma{
+    background: #fff;
+    height: 30vh;
+    margin-bottom: 30px;
+    height: 30vh;
+    padding: 1.1rem .9rem;
+    border-top: .6rem solid var(--Orange);
+    border-radius: .4rem .4rem .4rem .4rem;
+    position: relative;
+    box-shadow: 10px 10px 10px rgba(0,0,0, 0.4);
+}
+
+section .third .calculator{
+    background: #fff;
+    height: 30vh;
+    padding: 1.1rem .9rem;
+    border-top: .6rem solid var(--Bluet);
+    border-radius: .4rem .4rem .4rem .4rem;
+    position: relative;
+    box-shadow: 10px 10px 10px rgba(0,0,0, 0.4);    
+}
+
+section .supervisor h1,
+section .team-builder h1,
+section .karma h1,
+section .calculator h1{
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+
+
+section .supervisor-image{
+    position: absolute;
+    background: url("../images/icon-supervisor.svg") no-repeat;
+    width: 70px;
+    height: 30%;
+    /* background: #fff; */
+    bottom: 15px;
+    right: 10px;
+}
+
+section .team-builder-image{
+    position: absolute;
+    background: url("../images/icon-team-builder.svg");
+    width: 70px;
+    height: 30%;
+    /* background: #fff; */
+    bottom: 15px;
+    right: 10px;    
+}
+
+section .karma-image{
+    position: absolute;
+    background: url("../images/icon-karma.svg");
+    width: 70px;
+    height: 30%;
+    /* background: #fff; */
+    bottom: 15px;
+    right: 10px;    
+}
+
+section .calculator-image{
+    position: absolute;
+    background: #fff;
+    background: url("../images/icon-calculator.svg");
+    width: 70px;
+    height: 30%;
+    /* background: #fff; */
+    bottom: 15px;
+    right: 10px;      
+}
+
